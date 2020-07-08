@@ -25,8 +25,13 @@
 data-toggle="collapse" data-target="#navbar"
 aria-expanded="false" aria-controls="navbar">
 </button>
+{% if user.is_authenticated %}
+<a class="navbar-brand" href="{%url 'users:welcome' %}">
+Learning Log </a>
+{% else %}
 <a class="navbar-brand" href="{%url 'learning_logs:index' %}">
 Learning Log </a>
+{% endif %}
 </div>
 
 <div id="navbar" class="navbar-collapse collapse">
