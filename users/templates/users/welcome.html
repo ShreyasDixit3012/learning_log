@@ -1,0 +1,14 @@
+{% extends "learning_logs/base.html" %}
+
+{% block content %}
+<h1>
+<b>Welcome {{ user.username }}!</b>
+</h1>
+<h4>
+
+<b> View your topics: </b>
+</h4>
+
+<a href="{% url 'learning_logs:topics' %}"><h2><b>Topics>></b></h2></a>
+
+{% endblock content %}

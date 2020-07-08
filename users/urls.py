@@ -21,4 +21,6 @@ urlpatterns = [
     path('logout/', views.logout_view, name='logout'),
     # Registration Page
     path('register/', views.register, name='register'),
+    #Welcome page
+    path('welcome/',views.welcome, name='welcome')
     ]
