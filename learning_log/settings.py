@@ -143,7 +143,7 @@ if os.getcwd() == '/app':
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
     
     #Allow all host headers
-    ALLOWED_HOSTS = ['md-work-allotment.herokuapp.com']
+    ALLOWED_HOSTS = ['shreyas-learning-log.herokuapp.com']
     
     DEBUG = False
     
