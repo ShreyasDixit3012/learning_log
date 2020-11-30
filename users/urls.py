@@ -8,7 +8,7 @@ Created on Mon Jul  6 19:17:10 2020
 
 """Defines URL patterns for users"""
 
-from django.urls import path
+from django.urls import path, include
 from django.contrib.auth.views import LoginView
 
 from . import views
@@ -22,5 +22,7 @@ urlpatterns = [
     # Registration Page
     path('register/', views.register, name='register'),
     #Welcome page
-    path('welcome/',views.welcome, name='welcome')
+    path('welcome/',views.welcome, name='welcome'),
+    # Password_Reset
+    path('', include('django.contrib.auth.urls'))
     ]
